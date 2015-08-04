@@ -29,4 +29,9 @@ public class CategoryForTestsRepository {
 	public static List<Category> allCategories() {
 		return Arrays.asList(architecture(), cleanCode(), java(), networks());
 	}
+
+	public static Category categoryWithId(final Category category, final Long id) {
+		category.setId(id);
+		return category;
+	}
 }
